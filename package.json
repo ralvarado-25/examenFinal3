@@ -6,11 +6,11 @@
         "email": "info@onyxdev.net",
         "url": "https://onyxdev.net"
     },
-    "homepage": "https://onyxdev.net/files/battlefield/react/react-hotel-reservation-system/",
+    "homepage": "https://ralvarado-25.github.io/examenFinal3",
     "engines": {
         "node": "^14.17.0"
     },
-    "private": true,
+    "private": true,    
     "dependencies": {
         "@testing-library/jest-dom": "^5.14.1",
         "@testing-library/react": "^11.2.7",
@@ -22,6 +22,7 @@
         "@types/react-select": "^4.0.16",
         "@types/validator": "^13.6.1",
         "axios": "^0.21.1",
+        "gh-pages": "^4.0.0",
         "imask": "^6.1.0",
         "lodash": "^4.17.21",
         "react": "^17.0.2",
@@ -36,6 +37,8 @@
         "web-vitals": "^1.1.2"
     },
     "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
